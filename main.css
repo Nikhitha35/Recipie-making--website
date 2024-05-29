@@ -1,0 +1,78 @@
+/* Add your CSS styles here */
+/* Set the background image and specify its properties */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/033/259/800/large_2x/space-for-text-on-textured-background-surrounded-by-sweets-and-candies-from-top-view-background-image-ai-generated-photo.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover; /* Cover the whole background */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Do not repeat the background */
+  /* Optionally, you can add more properties like background-attachment, background-color, etc. */
+}
+body {
+  background-color: #2e4057;
+  margin:0;
+}
+
+.patterns {
+ height: 100vh;
+}
+
+
+
+svg text {
+ font-family: Lora;
+ letter-spacing: 10px;
+ stroke: #e72292;
+ font-size: 150px;
+ font-weight: 700;
+ stroke-width: 3;
+
+ animation: textAnimate 5s infinite alternate;
+ 
+}
+
+@keyframes textAnimate {
+ 0% {
+   stroke-dasharray: 0 50%;
+   stroke-dashoffset:  20%;
+   fill:hsl(191, 53%, 34%)
+
+ }
+ 
+ 100% {
+   stroke-dasharray: 50% 0;
+   stroke-dashoffstet: -20%;
+   fill: hsla(189, 68%, 75%,0%)
+ }
+ 
+}
+.patterns {
+  position: relative;
+}
+
+.enter-button {
+  position: absolute ;
+  bottom: 20px;
+  right: 20px;
+}
+
+.enter-button button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #be9ddf;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.enter-button button:hover {
+  background-color: #be9ddf;
+  color: #fff;
+}

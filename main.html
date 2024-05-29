@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Canvas </title>  
+      <link rel="icon" href="https://p1.hiclipart.com/preview/88/58/385/pink-circle-donuts-food-drawing-cuteness-kawaii-dessert-sprinkles-png-clipart-thumbnail.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="patterns">
+   <svg width="100%" height="100%">  <!-- SVG Scalable Vector Graphics -->
+      <defs>
+        <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+          <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+        </pattern>  
+      </defs>
+                    
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"></rect>
+      
+      <text x="50%" y="60%" text-anchor="middle"> Culinary Canvas</text>
+    </svg>
+
+    <!-- Enter button -->
+    <div class="enter-button">
+        <button onclick="navigateToAnotherPage()">Enter</button>
+    </div>
+</div>
+</body>
+<script>
+ function navigateToAnotherPage() {
+  // Change the URL to the desired webpage
+  window.location.href = 'home.html';
+}
+</script>
+</html>
+ 

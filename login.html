@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Canvas</title>
+    <link rel="icon" href="https://p1.hiclipart.com/preview/88/58/385/pink-circle-donuts-food-drawing-cuteness-kawaii-dessert-sprinkles-png-clipart-thumbnail.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Culinary Canvas</h1>
+    <nav class="navigaton">
+        <a href="home.html">Home</a>
+        <button class="btnlogin-popup">Login</button>
+    </nav>
+    </header>
+    <div class="wrapper">
+        <span class="iconclose"><ion-icon name="close-circle-outline"></ion-icon></ion-icon></span>
+        <div class="formbox login">
+            <h2>Welcome Back!!</h2>
+            <form action='connect.php' method="post">
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required> 
+                    <label>Password</label>
+                </div>
+                <div class="remember">
+                        <label><input type="checkbox">remember me</label>
+                        <a href="#">forgot passwod?</a>
+                </div>
+                <button type="submit" class="btn">login</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="#" class="register-link">REGISTER</a></p>
+                    </div>
+            </form>
+        </div>
+        <div class="formbox register">
+            <h2>Welcome</h2>
+            <form action='connect.php' method="post">
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="Username" required>
+                    <label>Username</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required> 
+                    <label>Password</label>
+                </div>
+                <div class="remember">
+                        <label><input type="checkbox">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn" onclick="navigateToAnotherPage()">Register</button>
+                    <div class="login">
+                        <p>Already have an account? <a href="#" class="login-link">login</a></p>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="enter-button">
+        <button onclick="navigateToAnotherPage()">Register</button>
+    </div> -->
+<script src="login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

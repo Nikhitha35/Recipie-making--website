@@ -1,0 +1,76 @@
+.footer-posts{
+    background-color: rgb(250, 226, 217);
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-1{
+    margin: 30px;
+    background-color: white;
+    width: 170px;
+    height: 240px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(-5deg);
+}
+.item-2{
+    margin: 30px;
+    background-color: white;
+    width: 170px;
+    height: 240px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(5deg);
+}
+#name-block{
+    background-color: white;
+}
+#name{
+    margin: 8px;
+}
+.item-1:hover{
+    transform: rotate(5deg);
+}
+.item-2:hover{
+    transform: rotate(-5deg);
+}
+.footer{
+    background-color: rgb(242, 228, 224);
+    text-align: center;
+}
+.section{
+    padding: 40px;
+}
+.submit{
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.submit:hover{
+    background-color: gray;
+}
+.checkbox{
+    border: none;
+}
+#b{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+/* .footer-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 5000px;
+    padding: 30px;
+} */
